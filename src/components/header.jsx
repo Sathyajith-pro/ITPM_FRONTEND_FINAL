@@ -16,6 +16,7 @@ export default function Header() {
       };
     }, []);
 
+    // Function to handle logout
     function handleLogout() {
       localStorage.removeItem("token"); // Remove token
       setIsAuthenticated(false);
